@@ -37,7 +37,6 @@
 #include "DeconvolutionTool.h"
 #include "WorkerThread.h"
 #include "HelpDialog.h"
-#include "CheckUpdatesThread.h"
 
 
 namespace Ui {
@@ -68,7 +67,6 @@ private:
     HelpDialog *helpDialog;
     QTimer *startupTimer;
     WorkerThread *workerThread;
-    CheckUpdatesThread *checkUpdatesThread;
     QLabel *imageLabel;
     double scaleFactor;
 

@@ -57,9 +57,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
         connect(startupTimer, SIGNAL(timeout()), SLOT(help()));
         startupTimer->start(500);
     }
-
-    checkUpdatesThread = new CheckUpdatesThread();
-    //checkUpdatesThread->start();
 }
 
 

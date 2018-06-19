@@ -31,8 +31,6 @@ set(SmartDeblur_UI_SRCS
   )
 
 set(SmartDeblur_SRCS
-  CheckUpdatesThread.cpp
-  CheckUpdatesThread.h
   DeconvolutionTool.cpp
   DeconvolutionTool.h
   HelpDialog.cpp
@@ -47,7 +45,6 @@ set(SmartDeblur_SRCS
   )
 
 set(SmartDeblur_MOC_H
-  CheckUpdatesThread.h
   DeconvolutionTool.h
   HelpDialog.h
   MainWindow.h

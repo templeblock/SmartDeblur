@@ -16,8 +16,7 @@ SOURCES += main.cpp\
     WorkerThread.cpp \
     ImageUtils.cpp \
     MathUtlis.cpp \
-    HelpDialog.cpp \
-    CheckUpdatesThread.cpp
+    HelpDialog.cpp
 
 HEADERS  += MainWindow.h \
     FFTW/fftw3.h \
@@ -30,8 +29,7 @@ HEADERS  += MainWindow.h \
     MathUtlis.h \
     Models/ProcessingContext.h \
     HelpDialog.h \
-    Models/GaussianBlur.h \
-    CheckUpdatesThread.h
+    Models/GaussianBlur.h
 
 FORMS    += MainWindow.ui \
     HelpDialog.ui
