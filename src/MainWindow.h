@@ -20,6 +20,7 @@
 #include <QString>
 #include <QDropEvent>
 #include <QUrl>
+#include <QMimeData>
 #include <time.h>
 
 #ifdef _MSC_VER

@@ -18,8 +18,7 @@ set(QT_USE_QTXML TRUE)
 #------------------------------------------------------------------------------
 # Find Qt
 #
-find_package(Qt4 REQUIRED)
-include(${QT_USE_FILE})
+find_package(Qt5Widgets REQUIRED)
 
 
 #------------------------------------------------------------------------------
@@ -55,9 +54,9 @@ set(SmartDeblur_RESOURCES
   MainResources.qrc
   )
 
-QT4_WRAP_UI(SmartDeblur_UI_CXX ${SmartDeblur_UI_SRCS})
-QT4_WRAP_CPP(SmartDeblur_MOC_SRCS ${SmartDeblur_MOC_H})
-QT4_ADD_RESOURCES(SmartDeblur_QRC_SRCS ${SmartDeblur_RESOURCES})
+QT5_WRAP_UI(SmartDeblur_UI_CXX ${SmartDeblur_UI_SRCS})
+QT5_WRAP_CPP(SmartDeblur_MOC_SRCS ${SmartDeblur_MOC_H})
+QT5_ADD_RESOURCES(SmartDeblur_QRC_SRCS ${SmartDeblur_RESOURCES})
 
 #------------------------------------------------------------------------------
 # FFTW
@@ -94,8 +93,8 @@ add_dependencies(SmartDeblur FFTW)
 target_link_libraries(SmartDeblur
   ${FFTW_LIBRARIES}
   ${FFTW_THREADS_LIBRARIES}
-  ${QT_LIBRARIES}
   )
+qt5_use_modules(SmartDeblur Widgets)
 
 install(TARGETS SmartDeblur
   RUNTIME DESTINATION bin
