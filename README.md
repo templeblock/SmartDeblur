@@ -38,12 +38,6 @@ Features
     <li>Deconvolution methods: Wiener, Tikhonov, Total Variation prior</li>
 </ul>
 
-Download
-========
-Version 1.27: <br/>
-[SmartDeblur-1.27-win.zip](https://github.com/downloads/Y-Vladimir/SmartDeblur/SmartDeblur-1.27-win.zip)<br/>
-[SmartDeblur-1.27-mac.dmg](https://github.com/downloads/gibbonweb/SmartDeblur/SmartDeblur-1.27-mac.dmg)
-
 License
 ========
 SmartDeblur is provided under the GPL v3 license
